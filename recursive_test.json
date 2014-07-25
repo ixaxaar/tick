@@ -1,0 +1,25 @@
+{
+    "pingList": [
+        {
+            "address": "http://127.0.0.1:3000/timer",
+            "period": "1000",
+            "concurrency": "10",
+            "method": "POST",
+            "data": {
+                "callback": "http://127.0.0.1:3000/start",
+                "period": "1000",
+                "concurrency": "10"
+            }
+        },
+        {
+            "address": "http://127.0.0.1:3000/start",
+            "period": "3000",
+            "concurrency": "10"
+        },
+        {
+            "address": "http://127.0.0.1:9000/ping3",
+            "period": "4000",
+            "concurrency": "10"
+        }
+    ]
+}
